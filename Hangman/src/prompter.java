@@ -12,7 +12,7 @@ public class prompter {
 		boolean isAcceptable = false;
 		
 		do {
-		System.out.println("Enter your letter");
+		System.out.printf("Enter your letter:\n %s \n",game.getProgress());
 		String guessIn = scanner.nextLine();
 		try {
 			isHit = game.applyGuess(guessIn);
